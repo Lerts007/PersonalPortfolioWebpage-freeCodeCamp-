@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans:ital,wght@0,400;0,800;1,300;1,400&display=swap");
+:root {
+  --background-color: #eee;
+  --text-color: #000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--background-color);
+}
