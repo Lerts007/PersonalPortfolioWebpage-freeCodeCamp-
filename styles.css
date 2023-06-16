@@ -34,11 +34,11 @@ body {
   z-index: 9;
 }
 
-#nav-bar {
+#navbar {
   width: 600px;
 }
 
-#nav-bar ul {
+#navbar ul {
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -76,10 +76,12 @@ body {
   justify-content: center;
   align-items: center;
 
+  text-align: center;
+
   background-color: var(--main-gray);
 }
 
-#welcome-section h2 {
+#welcome-section h1 {
   font-size: 6rem;
 }
 
@@ -88,9 +90,58 @@ body {
 }
 
 #projects {
-  height: 100vh;
+  padding: 80px 100px;
 
   background-color: var(--main-blue);
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 6rem;
+}
+.freeCodeCamp {
+}
+
+.freeCodeCamp h3 {
+  margin-top: 50px;
+  font-size: 3rem;
+}
+
+.freeCodeCamp hr {
+  margin-bottom: 50px;
+}
+
+.projects {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-items: center;
+  gap: 4rem;
+}
+
+.projects::after {
+  content: "";
+}
+
+#profile-link {
+  width: 100%;
+  max-width: 500px;
+  text-decoration: none;
+  color: var(--text-color);
+  background-color: var(--main-gray);
+}
+
+.project-img {
+  width: 100%;
+  object-fit: cover;
+}
+#profile-link p {
+  padding: 0.5em;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 #contact {
@@ -100,6 +151,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  text-align: center;
 
   background-color: var(--main-gray);
 }
