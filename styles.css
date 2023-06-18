@@ -11,6 +11,12 @@
   margin: 0;
   padding: 0;
 }
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-color);
+}
 html {
   font-family: "Open Sans", sans-serif;
   font-size: 10px;
@@ -56,9 +62,6 @@ body {
 .nav-link a {
   display: block;
   height: 100%;
-  cursor: pointer;
-  text-decoration: none;
-  color: var(--text-color);
   text-align: center;
 
   padding: 1em;
@@ -162,4 +165,27 @@ body {
 }
 #contact p {
   font-size: 3rem;
+}
+
+.contact-links {
+  margin-top: 20px;
+  font-size: 4rem;
+}
+
+.contact-links a {
+  display: inline-block;
+  margin-right: 20px;
+  transition: transform 0.4s;
+}
+
+.contact-links a:last-child {
+  margin-right: 0;
+}
+
+.contact-links a:hover {
+  transform: translateY(10px);
+}
+
+.contact-links i {
+  margin-right: 10px;
 }
